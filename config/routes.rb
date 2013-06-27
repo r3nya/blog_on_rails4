@@ -4,5 +4,7 @@ Blog::Application.routes.draw do
     resource :comments
   end
 
-  root to: "welcome#index"
+  get '/about', to: 'welcome#about'
+
+  root to: 'welcome#index'
 end
